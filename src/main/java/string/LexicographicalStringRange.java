@@ -7,16 +7,16 @@ public class LexicographicalStringRange {
     // which are lexicographically greater than S1 but smaller than S2.
 
     static int findNumberOfStrLexicographically(String src, String dest) {
-       long numSrc = convertStrToInteger(src);
-       long numDest = convertStrToInteger(dest);
-       return  numDest < numSrc ? 0 : (int) (numDest - numSrc -1);
+        long numSrc = convertStrToInteger(src);
+        long numDest = convertStrToInteger(dest);
+        return numDest < numSrc ? 0 : (int) (numDest - numSrc - 1);
     }
 
-    private static long convertStrToInteger(String str){
+    private static long convertStrToInteger(String str) {
         int n = str.length();
         int result = 0;
-        for (int i = 0; i <n ; i++) {
-          result = result*26 + (str.charAt(i) - 'a');
+        for (int i = 0; i < n; i++) {
+            result = result * 26 + (str.charAt(i) - 'a');
         }
         return result;
     }
