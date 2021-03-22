@@ -1,7 +1,12 @@
 package array;
 
 public class LongestIncreasingSubArray {
-
+    //Given an array containing n numbers.
+    // The problem is to find the length of the
+    // longest contiguous subarray such that every
+    // element in the subarray is strictly greater
+    // than its previous element in the same subarray.
+    // Time Complexity should be O(n).
     static int findLISubArray(int [] arr){
         int n = arr.length;
         int max =Integer.MIN_VALUE; int len=1;
